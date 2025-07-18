@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@source "../views";
+
+@theme {
+    --font-display: "Open sans", "sans-serif";
+    --color-primary: #009990;
+    --color-primary:#2F7A3E;
+    --color-light: #d1fae5;
+    --color-dark: #1a4731;
+    --color-button: #4ADE80;
+    --color-hover-button: #22c55e;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 600; /* semibold */
+    transition: color 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--color-hover);
+  }
+  
+  .nav-link.active {
+    font-weight: 700; /* bold */
+    color: black;
+  }
+  .swiper-slide {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .btn-selengkapnya {
+    @apply mt-4 bg-[#0C356A] text-white text-[15px] font-semibold 
+            px-6 py-1 rounded-full w-[247.97px] h-[22.11px] 
+            flex items-center justify-center 
+            hover:bg-[#092B54] transition;
+  }
+  .nav-link.active {
+    font-weight: bold;
+    color: black;
+  }
+@media (max-width: 768px) {
+    .nav-buttons {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .nav-button {
+        width: 160px !important;
+        height: 36px !important;
+        font-size: 13px !important;
+        padding: 8px 16px !important;
+    }
+
+    .nav-icon {
+        font-size: 18px !important;
+    }
+}
